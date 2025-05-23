@@ -1,0 +1,236 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+background: linear-gradient(180deg, #D84339, #D84339);
+
+
+
+
+
+
+    color: #ECEFF1;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header / Hero Section */
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-section {
+    background: url('tb.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.call-button {
+    display: inline-block;
+    background-color: #FFC107;
+    color: #1A252F;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.call-button:hover {
+    background-color: #FFB300;
+}
+
+/* Vehicle Section */
+.vehicle-section {
+    margin-top: 50px;
+    padding: 30px 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vehicle-section h2 {
+    font-size: 28px;
+    color: #FFC107;
+    margin-bottom: 30px;
+}
+
+.vehicle-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.vehicle {
+    padding: 0;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 500px;
+    width: 100%;
+}
+
+.vehicle h3 {
+    font-size: 24px;
+    margin: 20px 0 12px;
+    color: #FFC107;;
+}
+
+.vehicle img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.vehicle p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ECEFF1;
+}
+
+/* Flyer Section */
+.flyer-section {
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flyer-section h2 {
+    font-size: 26px;
+    color: #FFC107;
+    margin-bottom: 30px;
+}
+
+.flyer-section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.flyer-section ul li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.flyer-section h3 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.flyer-section a.call-button {
+    display: inline-block;
+    background-color: #FFC107;
+    color: #1A252F;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.flyer-section a.call-button:hover {
+    background-color: #FFB300;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 60px;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact h2 {
+    font-size: 26px;
+    color: #FFC107;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #ECEFF1;
+    margin: 8px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #FFC107;
+    font-size: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 30px;
+    }
+
+    .main-header p {
+        font-size: 18px;
+    }
+
+    .call-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .vehicle {
+        width: 100%;
+    }
+
+    .flyer-section ul {
+        max-width: 90%;
+    }
+}
