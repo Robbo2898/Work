@@ -8,6 +8,7 @@ body {
   padding: 0;
   background: linear-gradient(180deg, #FFD700, #FFA500);
   color: #D61C1F;
+  font-size: 22px; /* Bigger text site-wide */
 }
 
 .container {
@@ -17,23 +18,18 @@ body {
 }
 
 /* Header (unchanged) */
-.main-header {
-  text-align: center;
-  padding: 40px 20px;
-}
 .hero-section {
-  background: url('dw2.jpeg') no-repeat center center/cover;
   position: relative;
+  background: url('hero.jpg') no-repeat center center/cover;
   padding: 80px 20px;
-  color: #D61C1F;
-  text-shadow: 1px 1px 6px rgba(224, 220, 220, 0.5);
+  text-align: center;
 }
 
 .hero-section::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(255, 255, 255, 0.1); /* optional soft overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -62,9 +58,9 @@ body {
   display: inline-block;
   background-color: #D61C1F;
   color: #FFD700;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  padding: 14px 30px;
+  padding: 16px 36px;
   border-radius: 999px;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -81,8 +77,8 @@ body {
 .flyer-section h2,
 .contact h2 {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   color: #D61C1F;
 }
 
@@ -97,14 +93,14 @@ body {
 .flyer-section ul {
   list-style: none;
   padding: 0;
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
 .flyer-section ul li {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 8px;
-  padding: 10px;
+  padding: 14px;
   margin: 10px auto;
   max-width: 400px;
   font-family: 'Fira Sans', sans-serif;
@@ -134,10 +130,16 @@ body {
 }
 
 .vehicle h3 {
-  font-size: 24px;
+  font-size: 26px;
   margin: 20px 0 12px;
   color: #D61C1F;
   font-weight: 600;
+}
+
+.vehicle p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #D61C1F;
 }
 
 .vehicle img {
@@ -155,6 +157,10 @@ body {
   text-align: center;
 }
 
+.contact p {
+  font-size: 22px;
+}
+
 /* Footer */
 footer {
   font-family: 'Open Sans', sans-serif;
@@ -162,7 +168,8 @@ footer {
   padding: 20px;
   margin-top: 40px;
   color: #D61C1F;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
