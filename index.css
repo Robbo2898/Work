@@ -1,241 +1,187 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&family=Open+Sans&display=swap');
+
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #FFD700, #FFA500);
-    color: #ddac0b;
-    font-size: 18px;
-    line-height: 1.6;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #FFD700, #FFA500);
+  color: #D61C1F;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-/* Header / Hero Section */
+/* Header (unchanged) */
 .main-header {
-    text-align: center;
-    padding: 40px 20px;
-    color: #D61C1F;
-    border-bottom: 1px solid rgba(214, 28, 31, 0.2);
+  text-align: center;
+  padding: 40px 20px;
 }
-
 .hero-section {
-    background: url('dw2.jpeg') no-repeat center center/cover;
-    padding: 100px 20px;
-    color: #D61C1F;
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 40px;
+  background: url('dw2.jpeg') no-repeat center center/cover;
+  position: relative;
+  padding: 80px 20px;
+  color: #D61C1F;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
-.main-header h1,
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.1); /* optional soft overlay */
+  z-index: 1;
+}
+
+.hero-section * {
+  position: relative;
+  z-index: 2;
+}
+
+.main-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  color: #D61C1F;
+}
+
 .main-header p {
-    font-size: 38px;       /* Match title size */
-    font-weight: bold;     /* Make it punchy */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Visibility boost */
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  color: #D61C1F;
 }
 
-
-.main-header p {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
+/* Call Button */
 .call-button {
-    display: inline-block;
-    background-color: #D61C1F;
-    color: #FFD700;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 16px 32px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out, transform 0.2s ease;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  background-color: #D61C1F;
+  color: #FFD700;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .call-button:hover {
-    background-color: #B31518;
-    transform: scale(1.05);
+  background-color: #B3141A;
+  transform: scale(1.05);
+}
+
+/* Section Headings */
+.vehicle-section h2,
+.flyer-section h2,
+.contact h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #D61C1F;
+}
+
+/* Flyer Services Section */
+.flyer-section {
+  margin: 60px auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flyer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.flyer-section ul li {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 400px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: #D61C1F;
 }
 
 /* Vehicle Section */
 .vehicle-section {
-    margin-top: 50px;
-    padding: 30px 10px;
-    text-align: center;
-    border-bottom: 1px solid rgba(196, 31, 34, 0.897);
-}
-
-.vehicle-section h2 {
-    font-size: 30px;
-    color: #D61C1F;
-    margin-bottom: 30px;
+  margin-top: 50px;
+  padding: 30px 10px;
+  text-align: center;
 }
 
 .vehicle-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .vehicle {
-    padding: 0;
-    text-align: center;
-    color: #D61C1F;
-    max-width: 500px;
-    width: 100%;
+  padding: 0;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
 }
 
 .vehicle h3 {
-    font-size: 26px;
-    margin: 20px 0 12px;
-    color: #B31518;
+  font-size: 24px;
+  margin: 20px 0 12px;
+  color: #D61C1F;
+  font-weight: 600;
 }
 
 .vehicle img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-.vehicle p {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #D61C1F;
-}
-
-/* Flyer Section */
-.flyer-section {
-    margin: 60px auto;
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid rgba(226, 31, 34, 0.966);
-}
-
-.flyer-section h2 {
-    font-size: 28px;
-    color: #D61C1F;
-    margin-bottom: 30px;
-}
-
-.flyer-section ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto 30px auto;
-    max-width: 500px;
-    width: 100%;
-}
-
-.flyer-section ul li {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.service-card {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(214, 28, 31, 0.4);
-    border-radius: 12px;
-    padding: 18px 24px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #D61C1F;
-    width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-.flyer-section h3 {
-    font-size: 26px;
-    margin: 18px 0;
-}
-
-.flyer-section a.call-button {
-    display: inline-block;
-    background-color: #D61C1F;
-    color: #FFD700;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 16px 32px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background 0.3s ease-in-out, transform 0.2s ease;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.flyer-section a.call-button:hover {
-    background-color: #B31518;
-    transform: scale(1.05);
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact Section */
 .contact {
-    margin-top: 60px;
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid rgba(214, 28, 31, 0.1);
-}
-
-.contact h2 {
-    font-size: 28px;
-    color: #D61C1F;
-    margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 20px;
-    color: #D61C1F;
-    margin: 10px 0;
+  margin-top: 60px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    color: #D61C1F;
-    font-size: 18px;
-    border-top: 1px solid rgba(214, 28, 31, 0.1);
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #D61C1F;
+  font-size: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .main-header h1 {
-        font-size: 32px;
-    }
+  .main-header h1 {
+    font-size: 30px;
+  }
 
-    .main-header p {
-        font-size: 20px;
-    }
+  .main-header p {
+    font-size: 22px;
+  }
 
-    .call-button {
-        font-size: 18px;
-        padding: 12px 24px;
-    }
+  .call-button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
 
-    .vehicle {
-        width: 100%;
-    }
-
-    .flyer-section ul {
-        max-width: 90%;
-    }
+  .vehicle {
+    width: 100%;
+  }
 }
