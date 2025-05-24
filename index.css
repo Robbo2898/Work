@@ -1,16 +1,12 @@
 /* Global Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-background: linear-gradient(180deg, #D84339, #D84339);
-
-
-
-
-
-
-    color: #ECEFF1;
+    background: linear-gradient(180deg, #FFD700, #FFA500);
+    color: #ddac0b;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .container {
@@ -23,44 +19,50 @@ background: linear-gradient(180deg, #D84339, #D84339);
 .main-header {
     text-align: center;
     padding: 40px 20px;
-    color: #FFFFFF;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #D61C1F;
+    border-bottom: 1px solid rgba(214, 28, 31, 0.2);
 }
 
 .hero-section {
-    background: url('tb.jpg') no-repeat center center/cover;
+    background: url('dw2.jpeg') no-repeat center center/cover;
     padding: 100px 20px;
-    color: #fff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    color: #D61C1F;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
     border: none;
     border-radius: 8px;
     margin-bottom: 40px;
 }
 
-.main-header h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
+.main-header h1,
+.main-header p {
+    font-size: 38px;       /* Match title size */
+    font-weight: bold;     /* Make it punchy */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Visibility boost */
 }
 
+
 .main-header p {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
 .call-button {
     display: inline-block;
-    background-color: #FFC107;
-    color: #1A252F;
-    font-size: 18px;
+    background-color: #D61C1F;
+    color: #FFD700;
+    font-size: 22px;
     font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 16px 32px;
+    border-radius: 50px;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .call-button:hover {
-    background-color: #FFB300;
+    background-color: #B31518;
+    transform: scale(1.05);
 }
 
 /* Vehicle Section */
@@ -68,12 +70,12 @@ background: linear-gradient(180deg, #D84339, #D84339);
     margin-top: 50px;
     padding: 30px 10px;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(196, 31, 34, 0.897);
 }
 
 .vehicle-section h2 {
-    font-size: 28px;
-    color: #FFC107;
+    font-size: 30px;
+    color: #D61C1F;
     margin-bottom: 30px;
 }
 
@@ -87,15 +89,15 @@ background: linear-gradient(180deg, #D84339, #D84339);
 .vehicle {
     padding: 0;
     text-align: center;
-    color: #FFFFFF;
+    color: #D61C1F;
     max-width: 500px;
     width: 100%;
 }
 
 .vehicle h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin: 20px 0 12px;
-    color: #FFC107;;
+    color: #B31518;
 }
 
 .vehicle img {
@@ -107,9 +109,9 @@ background: linear-gradient(180deg, #D84339, #D84339);
 }
 
 .vehicle p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #ECEFF1;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #D61C1F;
 }
 
 /* Flyer Section */
@@ -117,12 +119,12 @@ background: linear-gradient(180deg, #D84339, #D84339);
     margin: 60px auto;
     text-align: center;
     padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(226, 31, 34, 0.966);
 }
 
 .flyer-section h2 {
-    font-size: 26px;
-    color: #FFC107;
+    font-size: 28px;
+    color: #D61C1F;
     margin-bottom: 30px;
 }
 
@@ -143,13 +145,13 @@ background: linear-gradient(180deg, #D84339, #D84339);
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 15px 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(214, 28, 31, 0.4);
+    border-radius: 12px;
+    padding: 18px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #D61C1F;
     width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -161,24 +163,27 @@ background: linear-gradient(180deg, #D84339, #D84339);
 }
 
 .flyer-section h3 {
-    font-size: 24px;
-    margin: 16px 0;
+    font-size: 26px;
+    margin: 18px 0;
 }
 
 .flyer-section a.call-button {
     display: inline-block;
-    background-color: #FFC107;
-    color: #1A252F;
-    font-size: 18px;
+    background-color: #D61C1F;
+    color: #FFD700;
+    font-size: 22px;
     font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 16px 32px;
+    border-radius: 50px;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .flyer-section a.call-button:hover {
-    background-color: #FFB300;
+    background-color: #B31518;
+    transform: scale(1.05);
 }
 
 /* Contact Section */
@@ -186,19 +191,19 @@ background: linear-gradient(180deg, #D84339, #D84339);
     margin-top: 60px;
     padding: 10px;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(214, 28, 31, 0.1);
 }
 
 .contact h2 {
-    font-size: 26px;
-    color: #FFC107;
+    font-size: 28px;
+    color: #D61C1F;
     margin-bottom: 20px;
 }
 
 .contact p {
-    font-size: 18px;
-    color: #ECEFF1;
-    margin: 8px 0;
+    font-size: 20px;
+    color: #D61C1F;
+    margin: 10px 0;
 }
 
 /* Footer */
@@ -206,24 +211,24 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    color: #FFC107;
-    font-size: 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #D61C1F;
+    font-size: 18px;
+    border-top: 1px solid rgba(214, 28, 31, 0.1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .main-header h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .main-header p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .call-button {
-        font-size: 16px;
-        padding: 10px 20px;
+        font-size: 18px;
+        padding: 12px 24px;
     }
 
     .vehicle {
